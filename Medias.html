@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Social Media Icons</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             body{
+                margin:0;
+                padding:0;
+                background: #caf4fd;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+             }
+             ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+             }
+             ul li{
+                list-style: none;
+                margin: 0 40px;
+             }
+             ul li a .fa{
+                font-size: 40px;
+                color: #c60e67;
+                line-height: 80px;
+                transition: 0.5s;
+                padding-right: 18px;
+             }
+             ul li a{
+                display: block;
+                width: 70px;
+                height: 100px;
+                background: #9d99a4;
+                text-align: center;
+                padding-left:20px;
+                transform: rotate(320deg) skew(199deg);
+                box-shadow: -20px 20px 10px rgba(12, 45, 194, 0.5);
+                position: relative;
+             }
+             ul li a:before{
+                content:'';
+                position: absolute;
+                top: 10px;
+                left: -20Px;
+                height: 100px;
+                width: 20px;
+                background: #c5beb9;
+                transform: rotate(0deg)skewY(-45deg);
+             }
+             ul li a:after{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: -10px;
+                height: 20px;
+                width: 100%;
+                background:#f92100;
+                transform: rotate(0deg) skewX(-45deg);
+             }
+             ul li a:hover{
+                transform: skew(0deg)translate(14px,-20px);
+                box-shadow: -50px 50px 50px rgba(0, 64, 255, 0.5);
+             }
+             ul li:hover .fa{
+                color: #100460;
+             }
+             ul li:hover:nth-child(1) a { background: #0066b4; }
+        ul li:hover:nth-child(1) a:before { background: #000000; }
+          ul li:hover:nth-child(1) a:after { background: #010101; }
+           ul li:hover:nth-child(2) a { background: #e400ab; }
+        ul li:hover:nth-child(2) a:before { background: #131414; }
+        ul li:hover:nth-child(2) a:after { background: #000000; }
+            ul li:hover:nth-child(3) a { background: #fbd201; }
+           ul li:hover:nth-child(3) a:before { background: #181919; }
+        ul li:hover:nth-child(3) a:after { background: #181919; }
+        ul li:hover:nth-child(4) a { background: #ff0090; }
+        ul li:hover:nth-child(4) a:before { background: #181919; }
+           ul li:hover:nth-child(4) a:after { background: #181919; }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </body>
+</html>
